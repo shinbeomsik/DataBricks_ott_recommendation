@@ -247,11 +247,9 @@ body, .gradio-container { background: var(--canvas) !important; }
 .recommendation-detail-pane .detail-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .recommendation-detail-pane .review-card__header { flex-direction: column; gap: 5px; }
 .recommendation-detail-pane .review-card__meta { white-space: normal; }
-.method-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; }
-.method-card { padding: 20px; border: 1px solid var(--line); border-radius: 18px; background: rgba(255,255,255,.035); }
-.method-card strong { color: white; }
-.method-card p { margin-bottom: 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
-.privacy-note { margin-top: 18px; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.method-summary { margin: 4px 0 16px; padding: 13px 16px; border: 1px solid var(--line); border-radius: 15px; background: rgba(255,255,255,.035); }
+.method-summary strong { color: #ffffff; font-size: 13px; }
+.method-summary span { margin-left: 8px; color: var(--muted); font-size: 12px; line-height: 1.6; }
 footer { display: none !important; }
 @media (max-width: 900px) {
   .gradio-container { padding: 12px 12px 40px !important; }
@@ -263,7 +261,8 @@ footer { display: none !important; }
   #movie-detail-panel { height: auto !important; max-height: 720px !important; }
   .review-card__header { flex-direction: column; gap: 5px; }
   .review-card__meta { white-space: normal; }
-  .method-grid { grid-template-columns: 1fr; }
+  .method-summary strong, .method-summary span { display: block; }
+  .method-summary span { margin: 5px 0 0; }
 }
 """
 
@@ -605,7 +604,7 @@ with gr.Blocks(
         """
     )
 
-    # 기능을 개인화 추천, 전체 작품 탐색, 추천 방식 설명의 세 탭으로 분리한다.
+    # 주요 기능을 개인화 추천과 전체 작품 탐색의 두 탭으로 분리한다.
     with gr.Tabs():
         with gr.Tab("내 취향 추천"):
             # 왼쪽은 사용자/전략, 오른쪽은 후보 필터를 입력받는다.
@@ -648,6 +647,15 @@ with gr.Blocks(
                             value=False, label="이미 본 작품 포함"
                         )
 
+            # 별도 탭 대신 추천 화면 안에서 계산 원리만 한 문장으로 간단히 안내한다.
+            gr.HTML(
+                """
+                <div class="method-summary">
+                  <strong>추천 방식</strong>
+                  <span>시청 이력과 콘텐츠 취향, 비슷한 시청자의 반응, 관객·평론가 평가를 선택한 전략 비율로 조합해 순위를 계산합니다.</span>
+                </div>
+                """
+            )
             recommend_button = gr.Button(
                 "취향 추천", variant="primary", elem_classes=["recommend-button"]
             )
@@ -736,22 +744,6 @@ with gr.Blocks(
                 inputs=[catalog_query, catalog_genre],
                 outputs=catalog_table,
             )
-
-        with gr.Tab("추천 방식"):
-            # 추천 모델의 세 구성 요소와 개인정보 처리 원칙을 정적인 설명으로 제공한다.
-            gr.HTML(
-                """
-                <div class="method-grid">
-                  <div class="method-card"><strong>1. 콘텐츠 유사도</strong><p>시청한 작품의 장르·키워드·언어를 사용자 취향 프로필로 만들고 후보 작품과의 유사도를 계산합니다.</p></div>
-                  <div class="method-card"><strong>2. 유사 시청자 반응</strong><p>시청 완주율·재시청·평점을 결합한 행동 행렬로 비슷한 시청자가 만족한 안 본 작품을 찾습니다.</p></div>
-                  <div class="method-card"><strong>3. 품질·인기 보정</strong><p>관객 평점, 평론가 점수, 완주율, 시청수를 평활화해 리뷰가 적은 작품이 과대 평가되는 문제를 줄입니다.</p></div>
-                </div>
-                <div class="privacy-note">
-                  이 데모는 제공된 CSV만 사용하며 외부 API를 호출하지 않습니다. 보호된 특성을 추천 점수에 사용하지 않고, 사용자에게는 추천 근거를 함께 표시합니다.
-                </div>
-                """
-            )
-
 
 if __name__ == "__main__":
     # Databricks Apps는 외부에서 컨테이너에 접속하므로 모든 인터페이스(0.0.0.0)에
