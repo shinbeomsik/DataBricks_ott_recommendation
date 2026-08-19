@@ -1,0 +1,42 @@
+# 추천 품질 실험과 평가 Job을 하나의 Bundle 리소스 파일로 관리한다.
+resources:
+  experiments:
+    # 배포 시 생성되는 MLflow Experiment다. 실행 결과는 이 실험 아래에 누적된다.
+    ott_recommendation_evaluation:
+      name: /Users/${workspace.current_user.userName}/media-ott-recommendation-quality-experiment
+      tags:
+        - key: project
+          value: media-ott-recommendation
+        - key: purpose
+          value: offline-strategy-evaluation
+
+  jobs:
+    # 네 추천 전략을 한 번에 평가하는 수동 실행용 서버리스 Job이다.
+    ott_recommendation_evaluation_job:
+      name: media-ott-recommendation-evaluate-quality-job
+      description: Unity Catalog 시간 분할 데이터로 네 추천 전략을 비교하고 MLflow에 기록
+      max_concurrent_runs: 1
+      timeout_seconds: 1800
+      tags:
+        project: media-ott-recommendation
+        workload: mlflow-evaluation
+      tasks:
+        - task_key: evaluate_recommendation_strategies
+          description: Precision Recall NDCG MRR 커버리지와 지연시간 측정
+          notebook_task:
+            # resources 폴더 기준으로 평가용 Databricks 소스 Notebook을 참조한다.
+            notebook_path: ../src/evaluation/ott_recommendation_mlflow.py
+            base_parameters:
+              catalog: analytics_dev
+              schema: ott_recommendation
+              experiment_id: ${resources.experiments.ott_recommendation_evaluation.id}
+              top_k: "10"
+              holdout_count: "1"
+              bundle_target: ${bundle.target}
+          environment_key: default
+
+      # Databricks Runtime에 포함된 MLflow, pandas, numpy만 사용하는 서버리스 환경이다.
+      environments:
+        - environment_key: default
+          spec:
+            client: "4"

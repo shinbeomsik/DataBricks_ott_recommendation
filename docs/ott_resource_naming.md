@@ -30,6 +30,9 @@
 | Databricks App | `media-ott-recommendation-app` | `{domain}-{product}-{purpose}-app` |
 | App source | `src/ott_recommendation_app` | Python 패키지 친화적 `snake_case` |
 | App resource file | `ott_recommendation_app.app.yml` | `<name>.<resource_type>.yml` |
+| MLflow Experiment | `media-ott-recommendation-quality-experiment` | 평가 목적과 리소스 유형 명시 |
+| Evaluation Job | `media-ott-recommendation-evaluate-quality-job` | 동사형 작업명과 `job` 접미사 |
+| Evaluation Job key | `ott_recommendation_evaluation_job` | Bundle 논리 키 `snake_case` |
 
 Development mode가 사용자별 접두사를 적용하므로 App 이름에 `dev`를
 수동으로 추가하지 않는다.
