@@ -1,7 +1,7 @@
 import unittest
 from pathlib import Path
 
-from recommendation_engine import RecommendationEngine
+from recommendation_engine import STRATEGY_WEIGHTS, RecommendationEngine
 
 DATA_DIR = Path(__file__).resolve().parent / "data"
 
@@ -43,6 +43,14 @@ class RecommendationEngineTest(unittest.TestCase):
         taste = self.engine.recommend("USR0003", strategy="취향 집중", limit=10)
         critics = self.engine.recommend("USR0003", strategy="평론가 추천", limit=10)
         self.assertNotEqual(taste["movie_id"].tolist(), critics["movie_id"].tolist())
+
+    def test_strategy_weights_match_product_rules(self):
+        self.assertEqual(STRATEGY_WEIGHTS["균형 맞춤"], (0.34, 0.33, 0.33))
+        self.assertEqual(STRATEGY_WEIGHTS["취향 집중"], (0.80, 0.10, 0.10))
+        self.assertEqual(STRATEGY_WEIGHTS["비슷한 시청자"], (0.10, 0.80, 0.10))
+        self.assertEqual(STRATEGY_WEIGHTS["평론가 추천"], (0.10, 0.10, 0.80))
+        for weights in STRATEGY_WEIGHTS.values():
+            self.assertAlmostEqual(sum(weights), 1.0)
 
     def test_recommendations_include_human_readable_reason(self):
         recommendations = self.engine.recommend("USR0004", limit=5)
