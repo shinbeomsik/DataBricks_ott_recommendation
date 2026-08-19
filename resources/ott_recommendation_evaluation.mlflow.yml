@@ -9,12 +9,14 @@ resources:
           value: media-ott-recommendation
         - key: purpose
           value: offline-strategy-evaluation
+        - key: observability
+          value: mlflow-tracing
 
   jobs:
     # 네 추천 전략을 한 번에 평가하는 수동 실행용 서버리스 Job이다.
     ott_recommendation_evaluation_job:
       name: media-ott-recommendation-evaluate-quality-job
-      description: Unity Catalog 시간 분할 데이터로 네 추천 전략을 비교하고 MLflow에 기록
+      description: Unity Catalog 시간 분할 데이터로 네 추천 전략을 비교하고 MLflow Run과 Trace에 기록
       max_concurrent_runs: 1
       timeout_seconds: 1800
       tags:

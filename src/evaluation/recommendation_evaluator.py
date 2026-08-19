@@ -412,6 +412,66 @@ class OfflineRecommendationEngine:
         return [self.movie_ids[index] for index in ranked[:top_k]]
 
 
+def evaluate_strategy(
+    engine: OfflineRecommendationEngine,
+    holdouts: dict[str, str],
+    strategy: str,
+    *,
+    top_k: int = 10,
+) -> tuple[dict[str, float], pd.DataFrame]:
+    """준비된 학습 데이터로 추천 전략 하나의 순위 품질과 지연시간을 계산한다."""
+
+    if not 1 <= top_k <= 50:
+        raise ValueError("top_k는 1에서 50 사이여야 합니다.")
+    if strategy not in STRATEGY_WEIGHTS:
+        raise ValueError(f"지원하지 않는 추천 전략입니다: {strategy}")
+    evaluation_users = sorted(user_id for user_id in holdouts if user_id in engine.user_index)
+    if not evaluation_users:
+        raise ValueError("추천 엔진의 사용자와 시간 분할 사용자가 일치하지 않습니다.")
+
+    rows: list[dict[str, Any]] = []
+    recommended_catalog: set[str] = set()
+    for user_id in evaluation_users:
+        started = perf_counter()
+        recommendations = engine.recommend(user_id, strategy, top_k)
+        latency_ms = (perf_counter() - started) * 1000.0
+        recommended_catalog.update(recommendations)
+        ground_truth = holdouts[user_id]
+        rank = recommendations.index(ground_truth) + 1 if ground_truth in recommendations else 0
+        hit = 1.0 if rank else 0.0
+        rows.append(
+            {
+                "strategy": strategy,
+                "user_id": user_id,
+                "ground_truth_movie_id": ground_truth,
+                "ground_truth_rank": rank,
+                "hit_at_k": hit,
+                "precision_at_k": hit / top_k,
+                "recall_at_k": hit,
+                "ndcg_at_k": 1.0 / np.log2(rank + 1.0) if rank else 0.0,
+                "reciprocal_rank": 1.0 / rank if rank else 0.0,
+                "latency_ms": latency_ms,
+                "recommended_movie_ids": "|".join(recommendations),
+            }
+        )
+    detail = pd.DataFrame(rows)
+    latency = detail["latency_ms"].to_numpy(dtype=float)
+    summary = {
+        "precision_at_k": float(detail["precision_at_k"].mean()),
+        "recall_at_k": float(detail["recall_at_k"].mean()),
+        "hit_rate_at_k": float(detail["hit_at_k"].mean()),
+        "ndcg_at_k": float(detail["ndcg_at_k"].mean()),
+        "mrr_at_k": float(detail["reciprocal_rank"].mean()),
+        "catalog_coverage": len(recommended_catalog) / max(1, len(engine.movie_ids)),
+        "latency_mean_ms": float(latency.mean()),
+        "latency_p50_ms": float(np.percentile(latency, 50)),
+        "latency_p95_ms": float(np.percentile(latency, 95)),
+        "evaluated_users": float(len(detail)),
+        "top_k": float(top_k),
+    }
+    return summary, detail
+
+
 def evaluate_strategies(
     frames: dict[str, pd.DataFrame],
     *,
@@ -420,56 +480,15 @@ def evaluate_strategies(
 ) -> tuple[dict[str, dict[str, float]], dict[str, pd.DataFrame], dict[str, int]]:
     """네 추천 전략을 같은 시간 분할과 지표로 공정하게 비교한다."""
 
-    if not 1 <= top_k <= 50:
-        raise ValueError("top_k는 1에서 50 사이여야 합니다.")
     split = build_temporal_holdout(frames, holdout_count=holdout_count)
     engine = OfflineRecommendationEngine(split.frames)
-    evaluation_users = sorted(user_id for user_id in split.holdouts if user_id in engine.user_index)
-    if not evaluation_users:
-        raise ValueError("추천 엔진의 사용자와 시간 분할 사용자가 일치하지 않습니다.")
-
     summaries: dict[str, dict[str, float]] = {}
     details: dict[str, pd.DataFrame] = {}
     for strategy in STRATEGY_WEIGHTS:
-        rows: list[dict[str, Any]] = []
-        recommended_catalog: set[str] = set()
-        for user_id in evaluation_users:
-            started = perf_counter()
-            recommendations = engine.recommend(user_id, strategy, top_k)
-            latency_ms = (perf_counter() - started) * 1000.0
-            recommended_catalog.update(recommendations)
-            ground_truth = split.holdouts[user_id]
-            rank = recommendations.index(ground_truth) + 1 if ground_truth in recommendations else 0
-            hit = 1.0 if rank else 0.0
-            rows.append(
-                {
-                    "strategy": strategy,
-                    "user_id": user_id,
-                    "ground_truth_movie_id": ground_truth,
-                    "ground_truth_rank": rank,
-                    "hit_at_k": hit,
-                    "precision_at_k": hit / top_k,
-                    "recall_at_k": hit,
-                    "ndcg_at_k": 1.0 / np.log2(rank + 1.0) if rank else 0.0,
-                    "reciprocal_rank": 1.0 / rank if rank else 0.0,
-                    "latency_ms": latency_ms,
-                    "recommended_movie_ids": "|".join(recommendations),
-                }
-            )
-        detail = pd.DataFrame(rows)
-        latency = detail["latency_ms"].to_numpy(dtype=float)
-        summaries[strategy] = {
-            "precision_at_k": float(detail["precision_at_k"].mean()),
-            "recall_at_k": float(detail["recall_at_k"].mean()),
-            "hit_rate_at_k": float(detail["hit_at_k"].mean()),
-            "ndcg_at_k": float(detail["ndcg_at_k"].mean()),
-            "mrr_at_k": float(detail["reciprocal_rank"].mean()),
-            "catalog_coverage": len(recommended_catalog) / max(1, len(engine.movie_ids)),
-            "latency_mean_ms": float(latency.mean()),
-            "latency_p50_ms": float(np.percentile(latency, 50)),
-            "latency_p95_ms": float(np.percentile(latency, 95)),
-            "evaluated_users": float(len(detail)),
-            "top_k": float(top_k),
-        }
-        details[strategy] = detail
+        summaries[strategy], details[strategy] = evaluate_strategy(
+            engine,
+            split.holdouts,
+            strategy,
+            top_k=top_k,
+        )
     return summaries, details, split.stats

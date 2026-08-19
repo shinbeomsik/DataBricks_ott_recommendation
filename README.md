@@ -75,6 +75,27 @@ pnpm test
 사용해 Top 10을 추천한 뒤 `Precision@10`, `Recall@10`, `Hit Rate@10`,
 `NDCG@10`, `MRR@10`, 카탈로그 커버리지, 평균·P50·P95 지연시간을 측정합니다.
 
+평가 실행마다 MLflow Trace도 한 건 생성합니다. Trace에는 다음 Span이 부모·자식
+구조로 기록됩니다.
+
+```text
+ott-recommendation-evaluation
+├─ load-unity-catalog-tables
+├─ build-temporal-holdout
+├─ build-recommendation-features
+├─ evaluate-균형 맞춤
+├─ evaluate-취향 집중
+├─ evaluate-비슷한 시청자
+├─ evaluate-평론가 추천
+├─ log-{전략}-mlflow-run (전략마다 한 번)
+├─ select-best-strategy
+└─ log-evaluation-summary
+```
+
+테이블명과 행 수, 분할 통계, 전략 가중치, 집계 지표, 사용자 평가 샘플 세 건을
+Trace 입력·출력으로 남깁니다. 사용자 샘플은 SHA-256 접두사로 비식별화하며 사용자
+이름과 리뷰 원문은 기록하지 않습니다.
+
 아래 스크립트는 인증 확인 → 사전 점검 → strict 검증 → Bundle 배포 → 평가 Job
 실행을 한 번에 수행합니다.
 
@@ -86,7 +107,8 @@ Databricks 왼쪽 메뉴의 **Experiments**에서
 `[dev 사용자] media-ott-recommendation-quality-experiment`를 열면 전체 비교용 부모 Run과
 전략별 자식 Run 네 개가 표시됩니다. 기본 우승 전략은 `NDCG@10`이 가장 높은
 전략이며, 동률이면 `Recall@10`으로 결정합니다. 각 자식 Run의 Artifacts에는
-사용자별 정답 순위가 담긴 `per_user_metrics.csv`도 저장됩니다.
+사용자별 정답 순위가 담긴 `per_user_metrics.csv`도 저장됩니다. 같은 Experiment의
+**Traces** 탭에서는 단계별 입력·출력, 실행시간, 오류 여부를 확인할 수 있습니다.
 
 ## Databricks 검증과 배포
 
