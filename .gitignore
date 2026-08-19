@@ -12,6 +12,12 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 
+# React and Node.js
+node_modules/
+dist/
+dist-server/
+*.tsbuildinfo
+
 # Editors and operating systems
 .idea/
 .vscode/

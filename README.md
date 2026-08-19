@@ -1,14 +1,18 @@
 # ScenePick OTT 맞춤 추천
 
 제공된 영화·사용자·시청 이력·관객 리뷰·평론가 리뷰 CSV를 결합해
-개인화 영화를 추천하는 Gradio 기반 Databricks App입니다.
+개인화 영화를 추천하는 React·TypeScript 기반 Databricks App입니다.
+
+React 화면은 Vite로 빌드하고, Node.js/Express API가 CSV 로딩과 추천 계산,
+작품 검색, 상세 리뷰 조회 및 React 정적 파일 제공을 담당합니다. 앱 실행 과정에
+Python 런타임은 사용하지 않습니다.
 
 ## 주요 기능
 
 - 300명의 시청·평점 이력을 기반으로 개인화 추천
 - 콘텐츠 유사도, 유사 시청자, 관객·평론가 품질 지표를 결합한 하이브리드 랭킹
 - `균형 맞춤`, `취향 집중`, `비슷한 시청자`, `평론가 추천` 전략
-- 이미 본 작품 제외, 장르·상영 시간·관람 등급 필터
+- 이미 본 작품 제외, 장르·관람 등급 필터
 - 작품별 추천 이유와 관객·평론가·완주율 상세 지표
 - 제목, 키워드, 로그라인, 감독, 배경의 한국어 검색
 
@@ -35,14 +39,14 @@ Catalog/Schema 조회 권한, Table `SELECT`, SQL Warehouse 사용 권한이 필
 
 ## 로컬 실행
 
-Python 3.11 이상을 사용합니다.
+Node.js 22.16 이상과 pnpm을 사용합니다.
 
 ```powershell
-python -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r .\src\ott_recommendation_app\requirements.txt
 Set-Location .\src\ott_recommendation_app
-$env:GRADIO_ANALYTICS_ENABLED = "False"
-..\..\.venv\Scripts\python.exe .\app.py
+corepack enable
+pnpm install --frozen-lockfile
+pnpm build
+pnpm start
 ```
 
 브라우저에서 `http://127.0.0.1:8000` 으로 접속합니다.
@@ -50,9 +54,9 @@ $env:GRADIO_ANALYTICS_ENABLED = "False"
 ## 테스트
 
 ```powershell
-.\.venv\Scripts\python.exe -m unittest discover `
-  -s .\src\ott_recommendation_app `
-  -p "test_*.py" -v
+Set-Location .\src\ott_recommendation_app
+pnpm check
+pnpm test
 ```
 
 ## Databricks 검증과 배포
@@ -88,12 +92,12 @@ $env:GRADIO_ANALYTICS_ENABLED = "False"
 
 ```text
 resources/ott_recommendation_app.app.yml  Databricks App 리소스
-src/ott_recommendation_app/app.py         Gradio UI
-src/ott_recommendation_app/recommendation_engine.py
+src/ott_recommendation_app/client/        React 화면과 반응형 스타일
+src/ott_recommendation_app/server/        Express API와 TypeScript 추천 엔진
 src/ott_recommendation_app/data/          로컬·앱 데모용 CSV 복사본
-src/ott_recommendation_app/app.yaml       Databricks App 실행 명령
-src/ott_recommendation_app/requirements.txt
-src/ott_recommendation_app/test_recommendation_engine.py
+src/ott_recommendation_app/package.json   빌드·실행·테스트 명령과 Node 의존성
+src/ott_recommendation_app/pnpm-lock.yaml 재현 가능한 의존성 잠금 파일
+src/ott_recommendation_app/app.yaml       Node.js 실행 명령
 src/sql/ingest_ott_data.sql               Unity Catalog 적재 SQL
 docs/ott_resource_naming.md
 ```

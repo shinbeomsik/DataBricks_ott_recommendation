@@ -6,7 +6,7 @@ resources:
     ott_recommendation_app:
       # Databricks Workspace의 Apps 화면에 표시되는 실제 앱 이름이다.
       name: media-ott-recommendation-app
-      description: 시청 이력·평점·평론가 반응을 결합한 개인화 OTT 작품 추천 앱
+      description: React와 Node.js로 구현한 개인화 OTT 작품 추천 앱
       # 이 파일은 resources/ 아래에 있으므로 ../를 사용해 Bundle 루트의 src로 이동한다.
       # 해당 폴더 전체가 앱 소스로 업로드되며 app.yaml이 실제 시작 명령을 결정한다.
       source_code_path: ../src/ott_recommendation_app
