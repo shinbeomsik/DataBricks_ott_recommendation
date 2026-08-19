@@ -1,0 +1,26 @@
+# Databricks local state and credentials
+.databricks/
+.databrickscfg
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local agent instructions and starter examples outside the OTT application
+AGENTS.md
+basic-app/
+resources/hello_job.yml
+scripts/deploy-and-run.ps1
+src/hello.py

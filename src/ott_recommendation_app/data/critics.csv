@@ -1,0 +1,41 @@
+critic_id,critic_name,pen_name,publication_name,region,years_experience,specialty_genre,education_background,criticism_style,primary_medium,email,joined_date,is_top_critic,profile_note
+CRT001,김해원,해원,필름시선,서울,18,Drama,영화학 석사,인물의 침묵과 공간 동선을 세밀하게 읽는다,web,haewon.kim@example.invalid,2008-03-04,true,독립영화와 도시 생활극을 오래 취재한 편집위원
+CRT002,윤재림,재림,장면들,부산,14,Thriller,신문방송학 학사,서사의 정보 배치와 관객의 시선 통제를 분석한다,web,jaerim.yoon@example.invalid,2012-09-17,true,부산 지역 극장과 장르영화제를 중심으로 활동
+CRT003,박소명,소명,스크린온도,서울,11,Romance,국문학 석사,대사 사이의 감정 변화와 관계의 윤리를 살핀다,newsletter,somyeong.park@example.invalid,2015-02-23,true,멜로와 여성 서사 전문 주간 뉴스레터 필자
+CRT004,최도윤,도윤,컷과문장,대전,16,Comedy,문화연구 박사,웃음이 만들어지는 계급과 노동의 맥락을 짚는다,magazine,doyoon.choi@example.invalid,2010-06-11,true,대중 코미디와 텔레비전 문화 연구를 병행
+CRT005,한서진,서진,시네로그,서울,20,Science Fiction,과학기술학 석사,기술 설정의 개연성과 사회적 비용을 함께 평가한다,web,seojin.han@example.invalid,2006-01-19,true,과학자 인터뷰를 곁들이는 SF 전문 평론가
+CRT006,이여울,여울,영화의결,광주,13,Fantasy,비교문학 석사,설화의 변주와 세계관의 감각적 규칙을 읽는다,podcast,yeoul.lee@example.invalid,2013-08-02,true,한국 설화와 현대 판타지를 다루는 팟캐스트 진행자
+CRT007,정우석,우석,오프스크린,서울,17,Horror,심리학 학사,공포가 몸과 주거 공간에 남기는 흔적을 분석한다,web,wooseok.jeong@example.invalid,2009-11-27,true,아시아 호러 특집과 감독 대담을 꾸준히 기획
+CRT008,서다인,다인,프레임서울,인천,12,Animation,애니메이션학 석사,움직임의 리듬과 배경 미술의 서사 기능을 본다,video,dain.seo@example.invalid,2014-04-16,true,가족 애니메이션을 어린 관객의 시선에서 리뷰
+CRT009,문태경,태경,시네마산책,서울,22,Documentary,사회학 석사,카메라와 피사체 사이의 권력 관계를 엄격히 묻는다,magazine,taegyeong.moon@example.invalid,2004-10-08,true,현장 취재와 다큐멘터리 윤리 세미나를 병행
+CRT010,강유정,유정,무비레터 숨,제주,15,Action,역사학 석사,액션의 공간 설계와 시대 재현의 태도를 함께 본다,newsletter,yujeong.kang@example.invalid,2011-05-30,true,역사 액션과 재난영화 전문 필자
+CRT011,배도하,도하,필름시선,서울,9,Drama,철학 학사,인물의 선택이 지닌 도덕적 모순을 간결하게 짚는다,web,doha.bae@example.invalid,2017-02-14,false,신인감독 장편과 배우의 첫 주연작을 주로 리뷰
+CRT012,오수빈,수빈,장면들,대구,8,Thriller,법학 학사,제도와 기록이 스릴러의 긴장을 만드는 방식을 본다,newsletter,subin.oh@example.invalid,2018-07-09,false,법정물과 행정 미스터리를 다루는 연재 필자
+CRT013,류민재,민재,스크린온도,서울,10,Romance,심리상담학 석사,관계의 경계와 화해 과정이 설득력 있는지 살핀다,podcast,minjae.ryu@example.invalid,2016-09-22,false,관객 사연과 멜로 영화를 연결하는 방송 진행자
+CRT014,신하늘,하늘,컷과문장,경기,7,Comedy,공연예술학 학사,배우의 호흡과 장면 전환의 코미디 타이밍에 집중한다,video,haneul.shin@example.invalid,2019-03-18,false,코미디 배우 인터뷰와 현장 리뷰를 제작
+CRT015,임지후,지후,시네로그,세종,12,Science Fiction,컴퓨터공학 학사,화려한 기술보다 시스템이 일상에 미치는 변화를 본다,web,jihu.lim@example.invalid,2014-12-01,false,개발자 출신으로 기술 서사의 오류와 상상력을 함께 검토
+CRT016,조은서,은서,영화의결,전주,9,Fantasy,민속학 석사,지역 설화가 현대 인물의 욕망과 만나는 지점을 읽는다,magazine,eunseo.jo@example.invalid,2017-05-12,false,지역 구술자료를 바탕으로 판타지 비평을 집필
+CRT017,고현우,현우,오프스크린,부산,11,Horror,건축학 학사,문과 복도와 층계가 공포를 조직하는 구조를 분석한다,web,hyeonwoo.ko@example.invalid,2015-10-26,false,공간 답사를 동반한 호러 로케이션 칼럼 운영
+CRT018,남소라,소라,프레임서울,서울,6,Animation,시각디자인 석사,색채와 형태가 감정의 변화를 전달하는 방식을 본다,video,sora.nam@example.invalid,2020-01-06,false,콘셉트 아트와 애니메이션 제작 과정 해설자
+CRT019,백승연,승연,시네마산책,강원,14,Documentary,인류학 석사,관찰의 시간과 지역 공동체의 목소리를 중시한다,magazine,seungyeon.baek@example.invalid,2012-04-27,false,농촌과 생태 다큐멘터리 장기 취재 필자
+CRT020,차민호,민호,무비레터 숨,울산,13,Action,기계공학 학사,도구와 탈것의 물리적 움직임이 사실적인지 살핀다,newsletter,minho.cha@example.invalid,2013-01-15,false,산업 현장 경험을 바탕으로 액션 장면을 분석
+CRT021,김이안,이안,필름파동,서울,5,Drama,문예창작학 학사,사소한 생활 소품이 인물의 과거를 여는 순간을 포착한다,web,ian.kim@example.invalid,2021-02-08,false,단편영화 리뷰로 출발한 젊은 필자
+CRT022,윤가람,가람,필름파동,부산,8,Thriller,범죄학 석사,범죄의 충격보다 수사 과정의 노동과 절차를 본다,podcast,garam.yoon@example.invalid,2018-11-19,false,지역 사건 보도를 연구한 범죄영화 패널
+CRT023,박해솔,해솔,마지막장면,서울,7,Romance,영상문화학 학사,엔딩이 앞선 감정을 어떻게 다시 보게 하는지 쓴다,newsletter,haesol.park@example.invalid,2019-06-28,false,결말 분석 중심의 유료 뉴스레터 운영
+CRT024,최라온,라온,마지막장면,대전,6,Comedy,언론정보학 학사,유행어보다 상황과 편집이 만드는 웃음을 선호한다,web,raon.choi@example.invalid,2020-04-03,false,직장 코미디와 웹콘텐츠를 함께 리뷰
+CRT025,한주원,주원,미래관객,서울,10,Science Fiction,도시계획학 석사,미래 도시의 인프라와 불평등을 구체적으로 검토한다,magazine,juwon.han@example.invalid,2016-08-17,false,도시 정책 연구자와 SF 평론을 병행
+CRT026,이지안,지안,달빛리뷰,제주,9,Fantasy,미학 석사,설명되지 않는 이미지의 정서적 잔향을 중시한다,web,jian.lee@example.invalid,2017-12-12,false,시와 영화 이미지를 연결하는 에세이 필자
+CRT027,정세온,세온,심야상영회,서울,8,Horror,영화연출 학사,사운드와 오프스크린 공간이 만드는 불안을 듣는다,podcast,seon.jeong@example.invalid,2018-03-09,false,매주 자정 호러 오디오 코멘터리를 진행
+CRT028,서윤슬,윤슬,그림의시간,인천,5,Animation,아동학 학사,어린 관객에게 두려움과 상실을 설명하는 방식을 본다,newsletter,yoonseul.seo@example.invalid,2021-07-23,false,보호자와 함께 읽는 애니메이션 리뷰를 발행
+CRT029,문도현,도현,리얼컷,광주,12,Documentary,저널리즘 석사,편집이 사실의 맥락을 바꾸는 순간을 꼼꼼히 확인한다,web,dohyeon.moon@example.invalid,2014-05-14,false,탐사보도 출신 다큐멘터리 전문 기자
+CRT030,강서율,서율,액션노트,부산,9,Action,무술학 학사,타격의 화려함보다 동작이 인물의 성격을 드러내는지 본다,video,seoyul.kang@example.invalid,2017-09-05,false,스턴트 코디네이터 인터뷰 채널 운영
+CRT031,배하진,하진,필름시선,대구,4,Drama,국문학 학사,지역어와 침묵이 함께 만드는 생활 리듬을 기록한다,web,hajin.bae@example.invalid,2022-01-21,false,지역 독립영화관 프로그램 노트 집필
+CRT032,오태린,태린,장면들,서울,6,Thriller,데이터과학 석사,숫자와 기록이 반전을 위해 공정하게 제시되는지 본다,newsletter,taerin.oh@example.invalid,2020-10-13,false,데이터 기반 장르영화 분석 칼럼 연재
+CRT033,류은재,은재,스크린온도,경기,5,Romance,사회복지학 학사,사랑 밖의 돌봄 관계와 생활 조건을 함께 살핀다,web,eunjae.ryu@example.invalid,2021-03-02,false,청년 주거와 가족 서사를 주로 다루는 필자
+CRT034,신도겸,도겸,컷과문장,서울,7,Comedy,연극학 석사,앙상블 배우들의 반응과 침묵에서 웃음을 찾는다,podcast,dogyeom.shin@example.invalid,2019-01-25,false,공연과 영화 코미디를 비교하는 방송 진행
+CRT035,임소율,소율,미래관객,대전,6,Science Fiction,생명윤리학 석사,기술의 가능성보다 동의와 책임의 문제를 먼저 묻는다,magazine,soyul.lim@example.invalid,2020-06-18,false,AI와 생명공학 소재 영화의 윤리 자문 경험
+CRT036,조해민,해민,영화의결,강릉,8,Fantasy,동양철학 학사,자연과 인간이 맺는 약속을 세계관의 중심에서 읽는다,newsletter,haemin.jo@example.invalid,2018-08-31,false,산과 바다의 민담을 모으는 여행 평론가
+CRT037,고유리,유리,심야상영회,서울,5,Horror,음향디자인 학사,저주보다 반복되는 생활 소음이 만드는 공포를 분석한다,podcast,yuri.ko@example.invalid,2021-11-05,false,현장 녹음과 함께하는 사운드 호러 리뷰 진행
+CRT038,남태오,태오,그림의시간,전주,7,Animation,일러스트레이션 학사,캐릭터의 실루엣과 소품 디자인에서 성격을 읽는다,video,taeo.nam@example.invalid,2019-04-12,false,애니메이터 작업실을 방문하는 영상 비평가
+CRT039,백다정,다정,리얼컷,제주,10,Documentary,환경사회학 석사,생태 위기를 개인 미담으로 축소하지 않는지 묻는다,web,dajeong.baek@example.invalid,2016-02-29,false,기후와 해양 다큐멘터리 전문 필자
+CRT040,차승호,승호,액션노트,서울,8,Action,촬영학 학사,카메라 위치와 편집이 액션의 공간을 이해시키는지 본다,video,seungho.cha@example.invalid,2018-12-07,false,액션 시퀀스의 숏 단위 해설 영상을 제작

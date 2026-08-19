@@ -1,0 +1,25 @@
+# Databricks Declarative Automation Bundle(DAB)의 진입점이다.
+# CLI에서 bundle validate/deploy/run을 실행하면 가장 먼저 이 파일을 읽고,
+# 아래 include에 지정된 개별 리소스 정의를 합쳐 최종 배포 구성을 만든다.
+bundle:
+  # Bundle 자체의 논리 이름이다. 개발 모드의 Workspace 배포 경로에도 사용된다.
+  name: media-ott-recommendation
+  # 이 Bundle 구성을 해석할 수 있는 Databricks CLI의 최소 버전을 고정한다.
+  databricks_cli_version: ">= 1.0.0"
+
+# resources 폴더의 모든 yml 파일을 Bundle 리소스로 포함한다.
+# OTT App 정의는 resources/ott_recommendation_app.app.yml에 있다.
+include:
+  - resources/*.yml
+
+# 배포 환경별 설정이다. 현재는 개발 환경만 기본 타겟으로 제공한다.
+targets:
+  dev:
+    # development 모드는 사용자별 리소스 격리와 개발용 이름 규칙을 적용한다.
+    mode: development
+    # bundle 명령에서 --target을 생략했을 때 dev를 선택한다.
+    default: true
+    workspace:
+      # 배포 파일을 현재 로그인한 사용자 아래에 저장해 다른 개발자와 충돌하지 않게 한다.
+      # ${...} 값은 Databricks CLI가 배포 시점에 실제 사용자/Bundle/타겟 값으로 치환한다.
+      root_path: /Workspace/Users/${workspace.current_user.userName}/.bundle/${bundle.name}/${bundle.target}

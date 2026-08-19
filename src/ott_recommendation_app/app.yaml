@@ -1,0 +1,11 @@
+# Databricks Apps 런타임이 컨테이너를 시작할 때 실행할 명령이다.
+# 이 파일의 위치가 앱 소스 루트이므로 app.py를 상대 경로로 실행할 수 있다.
+command:
+  - python
+  - app.py
+
+# 앱 프로세스에 전달할 환경 변수다.
+env:
+  # Gradio의 익명 사용 통계 전송을 끈다. 앱 기능에는 영향을 주지 않는다.
+  - name: GRADIO_ANALYTICS_ENABLED
+    value: "False"

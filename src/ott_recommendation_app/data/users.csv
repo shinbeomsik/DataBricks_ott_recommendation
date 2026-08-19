@@ -1,0 +1,301 @@
+user_id,display_name,birth_year,gender,region,preferred_language,signup_date,subscription_plan,preferred_genre,preferred_device,watch_time_preference,household_type,account_status
+USR0001,엔딩크레딧까지,1991,female,서울,ko,2019-11-08,Premium,Drama,smart_tv,weekday_night,single,active
+USR0002,새벽두시관객,1987,male,부산,ko,2020-02-14,Standard,Thriller,mobile,late_night,couple,active
+USR0003,팝콘은반반,1998,non_binary,경기,ko,2020-07-03,Basic,Comedy,tablet,weekend_afternoon,shared,active
+USR0004,비오는날영화,1979,female,대전,ko,2019-09-21,Standard,Romance,smart_tv,weekday_evening,family,active
+USR0005,주말의감독판,1984,male,인천,ko,2020-01-05,Premium,Science Fiction,smart_tv,weekend_night,family,active
+USR0006,고래와자막,1995,female,제주,ko,2020-06-18,Standard,Animation,tablet,weekend_morning,single,active
+USR0007,장면수집가,1990,male,광주,ko,2019-12-27,Premium,Documentary,web,weekday_night,single,active
+USR0008,퇴근후한편,1988,female,서울,ko,2020-03-12,Standard,Drama,mobile,commute,couple,active
+USR0009,반전은조용히,1996,male,대구,ko,2020-08-29,Basic,Thriller,mobile,late_night,single,active
+USR0010,달빛스크린,1974,female,강원,ko,2019-10-16,Premium,Fantasy,smart_tv,weekend_night,family,active
+USR0011,자막읽는고양이,2001,female,경기,ko,2020-09-04,Basic,Romance,tablet,late_night,shared,active
+USR0012,오늘도재생중,1982,male,충북,ko,2019-08-23,Standard,Action,smart_tv,weekday_evening,family,active
+USR0013,필름냄새,1969,male,부산,ko,2019-11-30,Premium,Documentary,web,weekend_afternoon,couple,active
+USR0014,소파일열,1993,female,서울,ko,2020-04-17,Standard,Comedy,smart_tv,weekday_night,single,active
+USR0015,한밤의예고편,1989,prefer_not_to_say,울산,ko,2020-05-09,Premium,Horror,game_console,late_night,single,active
+USR0016,사운드먼저,1997,male,경기,ko,2020-10-02,Basic,Science Fiction,headset,late_night,shared,active
+USR0017,오프닝건너뛰지마,1985,female,서울,ko,2019-07-11,Standard,Drama,smart_tv,weekday_evening,family,active
+USR0018,극장뒷자리,1977,male,전북,ko,2019-12-06,Premium,Action,smart_tv,weekend_night,couple,active
+USR0019,여름밤필름,1999,female,전남,ko,2020-08-15,Basic,Romance,mobile,late_night,single,active
+USR0020,한줄평보관함,1992,male,세종,ko,2020-03-28,Standard,Thriller,web,weekday_night,single,active
+USR0021,느린재생,1965,female,경남,ko,2019-06-14,Standard,Drama,smart_tv,weekend_afternoon,family,active
+USR0022,장르편식없음,1986,male,충남,ko,2020-01-24,Premium,Fantasy,smart_tv,weekend_night,couple,active
+USR0023,쿠키영상대기중,2000,female,서울,ko,2020-11-06,Basic,Action,mobile,late_night,shared,active
+USR0024,블루레이없는집,1994,male,부산,ko,2020-06-05,Standard,Science Fiction,game_console,weekend_night,single,active
+USR0025,낮잠후영화,1980,female,대구,ko,2019-09-08,Standard,Comedy,tablet,weekend_afternoon,family,active
+USR0026,크레딧음악,1972,male,서울,ko,2019-10-31,Premium,Drama,smart_tv,weekday_evening,couple,active
+USR0027,포스터모으는중,1996,female,인천,ko,2020-07-19,Basic,Horror,mobile,late_night,single,active
+USR0028,두번보는사람,1983,male,광주,ko,2019-12-14,Premium,Thriller,smart_tv,weekend_night,family,active
+USR0029,한강뷰어,1990,female,서울,ko,2020-02-29,Standard,Romance,tablet,weekday_night,couple,active
+USR0030,무음모드관객,1998,non_binary,경기,ko,2020-10-23,Basic,Documentary,mobile,commute,shared,active
+USR0031,토요일첫회,1976,male,대전,ko,2019-05-18,Premium,Action,smart_tv,weekend_morning,family,active
+USR0032,눈오는날재생,1989,female,강원,ko,2019-12-21,Standard,Fantasy,smart_tv,weekend_night,single,active
+USR0033,대사암기중,1995,male,서울,ko,2020-04-11,Standard,Comedy,web,weekday_night,single,active
+USR0034,배경음수집,1981,female,부산,ko,2019-08-02,Premium,Horror,headset,late_night,couple,active
+USR0035,작은화면큰감동,2002,female,충북,ko,2020-11-20,Basic,Animation,mobile,commute,shared,active
+USR0036,리모컨주인,1968,male,경기,ko,2019-07-26,Premium,Drama,smart_tv,weekday_evening,family,active
+USR0037,비밀상영회,1991,female,서울,ko,2020-05-29,Standard,Thriller,tablet,late_night,single,active
+USR0038,영화보는수달,1997,male,제주,ko,2020-09-18,Basic,Documentary,mobile,weekend_afternoon,single,active
+USR0039,주인공보다조연,1987,female,대구,ko,2019-11-15,Standard,Drama,smart_tv,weekday_night,couple,active
+USR0040,월요일은코미디,1993,male,울산,ko,2020-03-06,Standard,Comedy,web,weekday_evening,single,active
+USR0041,화면비율지킴이,1975,male,서울,ko,2019-04-12,Premium,Science Fiction,projector,weekend_night,family,active
+USR0042,봄밤한편,1999,female,전북,ko,2020-10-09,Basic,Romance,mobile,late_night,shared,active
+USR0043,영화제표없음,1984,female,부산,ko,2019-09-27,Premium,Documentary,web,weekend_afternoon,couple,active
+USR0044,괴물도친구,2003,male,경기,ko,2020-12-04,Basic,Animation,tablet,weekend_morning,family,active
+USR0045,액션은큰화면,1988,male,인천,ko,2020-01-31,Premium,Action,smart_tv,weekend_night,single,active
+USR0046,조용한반전,1994,female,서울,ko,2020-06-26,Standard,Thriller,headset,late_night,single,active
+USR0047,종이티켓추억,1963,female,경남,ko,2019-03-15,Standard,Drama,smart_tv,weekend_afternoon,family,active
+USR0048,저녁여섯시관객,1978,male,충남,ko,2019-08-30,Premium,Fantasy,smart_tv,weekday_evening,couple,active
+USR0049,감독이름부터,1990,female,서울,ko,2020-02-07,Standard,Documentary,web,weekday_night,single,active
+USR0050,예고편금지,1996,male,광주,ko,2020-07-31,Basic,Horror,mobile,late_night,shared,active
+USR0051,영화와귤,1985,female,제주,ko,2019-12-24,Premium,Drama,smart_tv,weekend_night,family,active
+USR0052,대사보다표정,1992,male,서울,ko,2020-04-24,Standard,Romance,tablet,weekday_night,couple,active
+USR0053,한편더볼까,2000,female,경기,ko,2020-11-13,Basic,Comedy,mobile,late_night,shared,active
+USR0054,클래식한밤,1970,male,대전,ko,2019-05-31,Premium,Action,projector,weekend_night,family,active
+USR0055,도시의관객,1986,female,인천,ko,2020-01-17,Standard,Thriller,smart_tv,weekday_evening,single,active
+USR0056,초록자막,1998,non_binary,서울,ko,2020-09-11,Basic,Fantasy,tablet,late_night,shared,active
+USR0057,필름앤커피,1981,female,부산,ko,2019-07-05,Premium,Documentary,web,weekend_morning,couple,active
+USR0058,웃음참기실패,1993,male,대구,ko,2020-05-22,Standard,Comedy,smart_tv,weekday_night,single,active
+USR0059,공포는낮에,1989,female,경기,ko,2020-03-20,Standard,Horror,tablet,weekend_afternoon,family,active
+USR0060,별빛관람차,2001,male,강원,ko,2020-10-30,Basic,Animation,mobile,weekend_night,shared,active
+USR0061,심야라디오영화,1977,female,서울,ko,2019-06-28,Premium,Romance,smart_tv,late_night,couple,active
+USR0062,결말은내일,1995,male,울산,ko,2020-08-07,Basic,Science Fiction,game_console,late_night,single,active
+USR0063,화면속산책,1983,female,전남,ko,2019-11-22,Standard,Drama,smart_tv,weekend_afternoon,family,active
+USR0064,장르여행자,1991,male,서울,ko,2020-02-21,Premium,Fantasy,web,weekday_night,single,active
+USR0065,재생목록정리중,1999,female,세종,ko,2020-09-25,Basic,Comedy,mobile,commute,shared,active
+USR0066,무비노트한권,1973,male,전북,ko,2019-04-26,Standard,Documentary,tablet,weekend_morning,couple,active
+USR0067,주말소파지킴이,1988,female,경기,ko,2020-01-10,Premium,Drama,smart_tv,weekend_night,family,active
+USR0068,소리큰장면,1994,male,부산,ko,2020-06-12,Standard,Action,headset,late_night,single,active
+USR0069,비오는창가,1982,female,광주,ko,2019-09-13,Standard,Romance,tablet,weekday_evening,couple,active
+USR0070,스포일러차단,2002,male,서울,ko,2020-12-11,Basic,Thriller,mobile,late_night,shared,active
+USR0071,한밤의토끼,1997,female,대전,ko,2020-07-17,Basic,Animation,tablet,weekend_night,single,active
+USR0072,검은화면오초,1985,male,인천,ko,2019-12-13,Premium,Horror,smart_tv,late_night,couple,active
+USR0073,장면전환중,1990,female,서울,ko,2020-03-27,Standard,Drama,web,weekday_night,single,active
+USR0074,구름위극장,1967,male,강원,ko,2019-05-03,Premium,Fantasy,smart_tv,weekend_afternoon,family,active
+USR0075,웃음소리주의,1996,female,대구,ko,2020-08-21,Basic,Comedy,mobile,commute,shared,active
+USR0076,보고또보는중,1979,male,경남,ko,2019-08-16,Standard,Action,smart_tv,weekend_night,family,active
+USR0077,작은극장단골,1987,female,부산,ko,2019-11-01,Premium,Documentary,web,weekend_morning,couple,active
+USR0078,대사없는밤,1993,non_binary,서울,ko,2020-05-15,Standard,Science Fiction,headset,late_night,single,active
+USR0079,빗소리와자막,2000,female,제주,ko,2020-10-16,Basic,Romance,tablet,late_night,shared,active
+USR0080,월간무비로그,1984,male,경기,ko,2020-01-03,Premium,Thriller,smart_tv,weekday_evening,family,active
+USR0081,저예산애호가,1991,female,광주,ko,2020-04-10,Standard,Drama,web,weekday_night,single,active
+USR0082,빛과그림자사이,1971,male,서울,ko,2019-03-29,Premium,Horror,projector,weekend_night,couple,active
+USR0083,아침영화한편,1989,female,충북,ko,2019-12-20,Standard,Animation,tablet,weekend_morning,family,active
+USR0084,빠른전개좋아,1998,male,울산,ko,2020-09-03,Basic,Action,mobile,late_night,single,active
+USR0085,천천히몰입,1980,female,전남,ko,2019-07-19,Premium,Documentary,smart_tv,weekend_afternoon,couple,active
+USR0086,설정집독자,1995,male,대전,ko,2020-06-19,Standard,Science Fiction,game_console,weekend_night,single,active
+USR0087,감정선추적,1986,female,서울,ko,2020-02-28,Standard,Romance,smart_tv,weekday_evening,family,active
+USR0088,반전두번,1992,male,경기,ko,2020-05-08,Premium,Thriller,web,late_night,single,active
+USR0089,금요일코미디,2001,female,부산,ko,2020-11-27,Basic,Comedy,mobile,late_night,shared,active
+USR0090,여운보관소,1976,male,전북,ko,2019-06-07,Premium,Drama,smart_tv,weekend_night,couple,active
+USR0091,포스터속여행,1994,female,인천,ko,2020-07-24,Basic,Fantasy,tablet,weekend_afternoon,single,active
+USR0092,공포영화초보,1988,male,서울,ko,2019-10-04,Standard,Horror,smart_tv,weekend_night,family,active
+USR0093,고전도신작도,1960,female,대구,ko,2019-02-15,Premium,Documentary,projector,weekend_morning,couple,active
+USR0094,액션동선연구,1983,male,경기,ko,2019-09-06,Premium,Action,smart_tv,weekday_night,single,active
+USR0095,오늘의명대사,1997,female,서울,ko,2020-08-14,Basic,Romance,mobile,commute,shared,active
+USR0096,미래도시입주민,1990,male,세종,ko,2020-03-13,Standard,Science Fiction,game_console,late_night,couple,active
+USR0097,캐릭터우선,1985,female,부산,ko,2019-11-29,Premium,Animation,tablet,weekend_afternoon,family,active
+USR0098,엔딩곡검색중,1999,male,대전,ko,2020-10-09,Basic,Comedy,mobile,late_night,single,active
+USR0099,스크린너머,1978,female,강원,ko,2019-05-24,Standard,Drama,smart_tv,weekday_evening,couple,active
+USR0100,비밀문을열다,1993,male,서울,ko,2020-04-03,Premium,Thriller,web,late_night,single,active
+USR0101,해피엔딩협회,1987,female,경기,ko,2020-01-31,Standard,Romance,smart_tv,weekend_night,family,active
+USR0102,다큐는끝까지,1975,male,광주,ko,2019-07-12,Premium,Documentary,web,weekend_morning,couple,active
+USR0103,비오는극장앞,2000,female,부산,ko,2020-11-06,Basic,Drama,mobile,late_night,shared,active
+USR0104,한밤의우주선,1992,male,대구,ko,2020-05-29,Standard,Science Fiction,game_console,late_night,single,active
+USR0105,초록괴물친구,1996,female,제주,ko,2020-08-28,Basic,Animation,tablet,weekend_afternoon,single,active
+USR0106,추격전은두번,1981,male,울산,ko,2019-10-18,Premium,Action,smart_tv,weekend_night,family,active
+USR0107,생활밀착관객,1989,female,서울,ko,2020-03-06,Standard,Comedy,smart_tv,weekday_evening,couple,active
+USR0108,소름은조용히,1995,male,인천,ko,2020-07-10,Basic,Horror,headset,late_night,single,active
+USR0109,필름속골목,1966,female,전남,ko,2019-04-19,Premium,Drama,smart_tv,weekend_afternoon,family,active
+USR0110,배우표정노트,1984,male,서울,ko,2019-12-27,Standard,Romance,web,weekday_night,couple,active
+USR0111,토론은엔딩후,1991,female,대전,ko,2020-04-24,Premium,Thriller,tablet,late_night,single,active
+USR0112,애니와아침밥,2003,male,경기,ko,2020-12-18,Basic,Animation,mobile,weekend_morning,family,active
+USR0113,소파속우주,1998,female,서울,ko,2020-09-11,Basic,Science Fiction,tablet,late_night,shared,active
+USR0114,현장음좋아,1973,male,부산,ko,2019-06-21,Premium,Documentary,headset,weekend_night,couple,active
+USR0115,가벼운월요일,1988,female,충남,ko,2020-02-14,Standard,Comedy,smart_tv,weekday_evening,family,active
+USR0116,칼싸움보다동선,1982,male,전북,ko,2019-09-20,Premium,Action,smart_tv,weekend_night,single,active
+USR0117,빨간커튼,1994,female,서울,ko,2020-06-05,Standard,Horror,tablet,late_night,single,active
+USR0118,저녁바람영화,1986,male,강원,ko,2019-11-08,Standard,Romance,smart_tv,weekday_evening,couple,active
+USR0119,장면속직업인,1979,female,경기,ko,2019-08-02,Premium,Drama,web,weekend_afternoon,family,active
+USR0120,오늘은판타지,2001,male,대구,ko,2020-10-23,Basic,Fantasy,mobile,late_night,shared,active
+USR0121,쿠션두개관객,1990,female,서울,ko,2020-01-17,Premium,Comedy,smart_tv,weekday_night,single,active
+USR0122,자막싱크민감,1983,male,부산,ko,2019-07-26,Standard,Thriller,web,late_night,couple,active
+USR0123,긴호흡환영,1968,female,광주,ko,2019-03-08,Premium,Documentary,smart_tv,weekend_morning,family,active
+USR0124,로봇도감정있어,1997,male,세종,ko,2020-08-21,Basic,Science Fiction,game_console,weekend_night,single,active
+USR0125,골목길엔딩,1985,female,인천,ko,2019-12-06,Standard,Drama,smart_tv,weekday_evening,couple,active
+USR0126,오후네시멜로,1992,male,서울,ko,2020-04-17,Standard,Romance,tablet,weekday_night,single,active
+USR0127,공포는이어폰,2000,female,경기,ko,2020-11-13,Basic,Horror,headset,late_night,shared,active
+USR0128,모험은거실에서,1977,male,경남,ko,2019-05-10,Premium,Action,smart_tv,weekend_night,family,active
+USR0129,주말다큐클럽,1988,female,제주,ko,2020-02-07,Standard,Documentary,web,weekend_afternoon,couple,active
+USR0130,웃긴장면저장,1995,male,대전,ko,2020-07-03,Basic,Comedy,mobile,commute,single,active
+USR0131,겨울밤재생,1974,female,강원,ko,2019-09-27,Premium,Fantasy,smart_tv,weekend_night,family,active
+USR0132,미스터리서랍,1991,male,서울,ko,2020-03-20,Standard,Thriller,web,late_night,single,active
+USR0133,영화속식탁,1984,female,전북,ko,2019-11-15,Standard,Drama,smart_tv,weekday_evening,couple,active
+USR0134,파도소리관객,1998,male,부산,ko,2020-09-04,Basic,Romance,mobile,late_night,shared,active
+USR0135,색연필열두색,2002,female,경기,ko,2020-12-24,Basic,Animation,tablet,weekend_morning,family,active
+USR0136,폭발보다긴장,1980,male,울산,ko,2019-08-30,Premium,Action,smart_tv,weekend_night,single,active
+USR0137,도시괴담수집,1993,female,서울,ko,2020-05-01,Standard,Horror,headset,late_night,single,active
+USR0138,별과편의점,1996,male,대구,ko,2020-08-14,Basic,Science Fiction,game_console,late_night,shared,active
+USR0139,작은목소리들,1972,female,전남,ko,2019-04-05,Premium,Documentary,web,weekend_afternoon,couple,active
+USR0140,로맨스는천천히,1987,male,서울,ko,2020-01-24,Standard,Romance,smart_tv,weekday_evening,family,active
+USR0141,첫장면집중,1990,female,경기,ko,2020-03-13,Premium,Drama,tablet,weekday_night,single,active
+USR0142,코미디한스푼,1985,male,부산,ko,2019-12-13,Standard,Comedy,smart_tv,weekend_night,couple,active
+USR0143,달빛과도깨비,1999,female,광주,ko,2020-10-30,Basic,Fantasy,mobile,late_night,shared,active
+USR0144,기록영화노트,1964,male,충북,ko,2019-02-22,Premium,Documentary,web,weekend_morning,family,active
+USR0145,액션편집점,1989,female,서울,ko,2020-06-12,Standard,Action,smart_tv,late_night,single,active
+USR0146,미래윤리관객,1994,male,대전,ko,2020-07-31,Standard,Science Fiction,tablet,weekday_night,single,active
+USR0147,호러는낮잠후,1982,female,인천,ko,2019-10-11,Premium,Horror,smart_tv,weekend_afternoon,couple,active
+USR0148,엔딩후산책,1978,male,강원,ko,2019-07-05,Standard,Drama,smart_tv,weekday_evening,family,active
+USR0149,토요일의멜로,1997,female,서울,ko,2020-09-18,Basic,Romance,mobile,late_night,shared,active
+USR0150,웃음버튼고장,2001,male,경기,ko,2020-11-27,Basic,Comedy,game_console,weekend_night,single,active
+USR0151,애니메이션식탁,1986,female,부산,ko,2019-11-22,Premium,Animation,tablet,weekend_morning,family,active
+USR0152,단서메모장,1992,male,서울,ko,2020-04-03,Standard,Thriller,web,late_night,single,active
+USR0153,한옥판타지,1971,female,전북,ko,2019-05-17,Premium,Fantasy,smart_tv,weekend_afternoon,couple,active
+USR0154,카메라뒤사람,1988,male,제주,ko,2020-01-10,Standard,Documentary,web,weekday_night,single,active
+USR0155,거실액션팀,1983,female,울산,ko,2019-09-06,Premium,Action,smart_tv,weekend_night,family,active
+USR0156,인공지능친구,1998,male,세종,ko,2020-10-02,Basic,Science Fiction,mobile,late_night,shared,active
+USR0157,비명은작게,1995,female,대구,ko,2020-08-07,Standard,Horror,headset,late_night,single,active
+USR0158,인물동선관찰,1976,male,서울,ko,2019-06-28,Premium,Drama,projector,weekend_night,couple,active
+USR0159,여름비로맨스,1990,female,광주,ko,2020-02-21,Standard,Romance,tablet,weekday_evening,single,active
+USR0160,회사코미디부,1984,male,경기,ko,2019-12-20,Standard,Comedy,smart_tv,weekday_night,family,active
+USR0161,동화속여행자,2003,female,강원,ko,2020-12-11,Basic,Animation,tablet,weekend_morning,shared,active
+USR0162,반전기록원,1987,male,서울,ko,2020-03-27,Premium,Thriller,web,late_night,single,active
+USR0163,달빛병수집가,1993,female,제주,ko,2020-06-19,Standard,Fantasy,mobile,late_night,single,active
+USR0164,노동다큐관객,1969,male,경남,ko,2019-03-22,Premium,Documentary,smart_tv,weekend_afternoon,family,active
+USR0165,추격선탑승자,1996,female,부산,ko,2020-09-25,Basic,Action,game_console,weekend_night,shared,active
+USR0166,근미래세입자,1981,male,인천,ko,2019-10-25,Standard,Science Fiction,smart_tv,weekday_night,couple,active
+USR0167,빈교실관객,1999,female,대전,ko,2020-11-20,Basic,Horror,mobile,late_night,single,active
+USR0168,골목휴먼극,1979,male,서울,ko,2019-08-09,Premium,Drama,smart_tv,weekend_afternoon,family,active
+USR0169,첫눈기다림,1989,female,강원,ko,2019-12-06,Standard,Romance,tablet,weekday_evening,couple,active
+USR0170,평일엔코미디,1994,male,대구,ko,2020-07-10,Basic,Comedy,mobile,commute,single,active
+USR0171,우주우편단골,1985,female,서울,ko,2020-01-31,Premium,Science Fiction,smart_tv,weekend_night,family,active
+USR0172,도깨비시장손님,1997,male,경북,ko,2020-09-11,Basic,Fantasy,tablet,late_night,shared,active
+USR0173,생태다큐산책,1973,female,전남,ko,2019-04-12,Standard,Documentary,web,weekend_morning,couple,active
+USR0174,산악액션관객,1988,male,충남,ko,2019-11-29,Premium,Action,smart_tv,weekend_night,single,active
+USR0175,옷장괴물친구,2000,female,경기,ko,2020-10-16,Basic,Animation,mobile,weekend_afternoon,shared,active
+USR0176,문뒤를조심,1992,male,서울,ko,2020-05-22,Standard,Horror,headset,late_night,single,active
+USR0177,이웃의장면,1966,female,부산,ko,2019-05-03,Premium,Drama,smart_tv,weekday_evening,family,active
+USR0178,편지속멜로,1983,male,전북,ko,2019-09-13,Standard,Romance,tablet,weekend_night,couple,active
+USR0179,반상회코미디,1995,female,서울,ko,2020-08-28,Basic,Comedy,mobile,late_night,single,active
+USR0180,시계수리관객,1980,male,세종,ko,2019-12-27,Premium,Science Fiction,smart_tv,weekday_night,family,active
+USR0181,마법재고확인,1998,female,대전,ko,2020-10-09,Basic,Fantasy,tablet,late_night,shared,active
+USR0182,현장노동기록,1975,male,울산,ko,2019-06-14,Premium,Documentary,web,weekend_afternoon,couple,active
+USR0183,역사액션좋아,1986,female,서울,ko,2020-02-07,Standard,Action,smart_tv,weekend_night,family,active
+USR0184,소리없는공포,1991,male,광주,ko,2020-04-24,Standard,Horror,headset,late_night,single,active
+USR0185,연필바다관객,2002,female,경기,ko,2020-12-04,Basic,Animation,tablet,weekend_morning,shared,active
+USR0186,느린드라마,1977,male,경남,ko,2019-07-19,Premium,Drama,smart_tv,weekend_afternoon,family,active
+USR0187,대사사이로맨스,1989,female,서울,ko,2020-03-06,Standard,Romance,web,weekday_night,couple,active
+USR0188,탕비실탐정,1996,male,대구,ko,2020-09-04,Basic,Comedy,mobile,late_night,single,active
+USR0189,가상도시주민,1984,female,인천,ko,2019-11-15,Premium,Science Fiction,game_console,weekend_night,family,active
+USR0190,밤을사는사람,1993,male,부산,ko,2020-06-26,Standard,Fantasy,smart_tv,late_night,single,active
+USR0191,카메라윤리노트,1972,female,제주,ko,2019-04-26,Premium,Documentary,web,weekend_morning,couple,active
+USR0192,열차액션좌석,1988,male,대전,ko,2020-01-17,Standard,Action,smart_tv,weekend_night,family,active
+USR0193,새벽배송금지,1999,female,경기,ko,2020-11-13,Basic,Horror,mobile,late_night,shared,active
+USR0194,구름우체부,2001,male,강원,ko,2020-12-18,Basic,Animation,tablet,weekend_morning,family,active
+USR0195,생활소품수집,1981,female,서울,ko,2019-09-27,Premium,Drama,smart_tv,weekday_evening,couple,active
+USR0196,한강멜로클럽,1994,male,서울,ko,2020-07-24,Standard,Romance,mobile,late_night,single,active
+USR0197,회사일은웃음,1987,female,경기,ko,2020-02-14,Standard,Comedy,smart_tv,weekday_night,family,active
+USR0198,달기지편의점,1990,male,세종,ko,2020-04-10,Premium,Science Fiction,game_console,weekend_night,single,active
+USR0199,종이배여행,1997,female,전남,ko,2020-09-18,Basic,Fantasy,tablet,late_night,shared,active
+USR0200,마지막상영회,1970,male,부산,ko,2019-03-15,Premium,Horror,projector,weekend_night,couple,active
+USR0201,시장다큐단골,1985,female,대구,ko,2019-12-13,Standard,Documentary,web,weekend_morning,family,active
+USR0202,크레인액션,1992,male,울산,ko,2020-05-29,Standard,Action,smart_tv,late_night,single,active
+USR0203,애니와우유,2004,female,경기,ko,2020-12-25,Basic,Animation,tablet,weekend_morning,family,active
+USR0204,주머니속지도,1980,male,서울,ko,2019-08-23,Premium,Drama,smart_tv,weekday_evening,couple,active
+USR0205,겨울바다멜로,1995,female,강원,ko,2020-08-07,Basic,Romance,mobile,late_night,single,active
+USR0206,외계인치킨,1998,male,경기,ko,2020-10-02,Basic,Comedy,game_console,weekend_night,shared,active
+USR0207,기억백업중,1986,female,서울,ko,2020-01-10,Premium,Science Fiction,web,weekday_night,single,active
+USR0208,산신령민원인,1978,male,충북,ko,2019-06-21,Standard,Fantasy,smart_tv,weekend_afternoon,family,active
+USR0209,바다기록자,1991,female,제주,ko,2020-04-17,Premium,Documentary,web,weekend_morning,couple,active
+USR0210,야간순찰팬,1984,male,인천,ko,2019-11-08,Standard,Action,smart_tv,weekend_night,single,active
+USR0211,거울보지마,1996,female,서울,ko,2020-09-25,Basic,Horror,headset,late_night,shared,active
+USR0212,별정비사,2000,male,대전,ko,2020-11-27,Basic,Animation,tablet,weekend_afternoon,single,active
+USR0213,옥상텃밭관객,1974,female,경남,ko,2019-04-05,Premium,Drama,smart_tv,weekday_evening,family,active
+USR0214,플레이리스트2007,1989,male,부산,ko,2020-02-28,Standard,Romance,web,late_night,couple,active
+USR0215,칼퇴코미디,1993,female,서울,ko,2020-06-12,Standard,Comedy,mobile,commute,single,active
+USR0216,한강수위제로,1982,male,경기,ko,2019-09-20,Premium,Science Fiction,smart_tv,weekend_night,family,active
+USR0217,바람보관소,1997,female,제주,ko,2020-10-30,Basic,Fantasy,tablet,late_night,shared,active
+USR0218,간판글씨관찰,1965,male,대구,ko,2019-02-08,Premium,Documentary,web,weekend_morning,couple,active
+USR0219,방패연액션,1988,female,경기,ko,2020-01-31,Standard,Action,smart_tv,weekend_night,family,active
+USR0220,복도끝은싫어,1994,male,서울,ko,2020-07-17,Basic,Horror,mobile,late_night,single,active
+USR0221,달팽이호텔손님,2002,female,강원,ko,2020-12-11,Basic,Animation,tablet,weekend_morning,shared,active
+USR0222,구두수선장면,1981,male,광주,ko,2019-08-16,Premium,Drama,smart_tv,weekend_afternoon,couple,active
+USR0223,봄밤번역가,1990,female,서울,ko,2020-03-27,Standard,Romance,web,weekday_night,single,active
+USR0224,임시반장회원,1985,male,경기,ko,2019-12-20,Standard,Comedy,smart_tv,weekday_evening,family,active
+USR0225,감정대여중,1999,female,대전,ko,2020-11-06,Basic,Science Fiction,mobile,late_night,shared,active
+USR0226,여우비우체국,1976,male,경북,ko,2019-05-24,Premium,Fantasy,smart_tv,weekend_night,couple,active
+USR0227,교대근무관객,1987,female,울산,ko,2020-02-21,Standard,Documentary,web,weekend_afternoon,family,active
+USR0228,북항추격중,1992,male,부산,ko,2020-05-15,Premium,Action,smart_tv,late_night,single,active
+USR0229,흰운동화주의,1995,female,서울,ko,2020-08-14,Basic,Horror,headset,late_night,single,active
+USR0230,종이컵탐험대,2003,male,경기,ko,2020-12-24,Basic,Animation,tablet,weekend_morning,family,active
+USR0231,소양강안개,1979,female,강원,ko,2019-07-12,Premium,Drama,smart_tv,weekday_evening,couple,active
+USR0232,두번째크레딧,1988,male,서울,ko,2020-01-24,Standard,Romance,web,weekend_night,single,active
+USR0233,반려식물면접,1996,female,세종,ko,2020-09-03,Basic,Comedy,mobile,commute,shared,active
+USR0234,복제인휴가중,1984,male,인천,ko,2019-11-29,Premium,Science Fiction,game_console,weekend_night,family,active
+USR0235,별을줍는밤,1998,female,서울,ko,2020-10-23,Basic,Fantasy,tablet,late_night,single,active
+USR0236,씨앗백년,1967,male,전북,ko,2019-03-29,Premium,Documentary,web,weekend_morning,couple,active
+USR0237,태권도장응원단,1989,female,경기,ko,2020-04-03,Standard,Action,smart_tv,weekend_afternoon,family,active
+USR0238,파도소리반지하,1993,male,서울,ko,2020-06-26,Standard,Horror,headset,late_night,single,active
+USR0239,북극여우친구,2001,female,부산,ko,2020-11-20,Basic,Animation,tablet,weekend_morning,shared,active
+USR0240,항구두번째이름,1977,male,울산,ko,2019-06-07,Premium,Drama,smart_tv,weekday_evening,family,active
+USR0241,빈자리예약자,1991,female,광주,ko,2020-03-13,Standard,Romance,web,weekday_night,couple,active
+USR0242,택배사진웃음,1997,male,경기,ko,2020-09-11,Basic,Comedy,mobile,commute,single,active
+USR0243,오류코드가족,1983,female,서울,ko,2019-10-04,Premium,Science Fiction,smart_tv,weekend_night,family,active
+USR0244,시간굽는빵집,1995,male,대구,ko,2020-07-31,Standard,Fantasy,tablet,late_night,single,active
+USR0245,도시숨구멍,1972,female,대전,ko,2019-04-19,Premium,Documentary,web,weekend_afternoon,couple,active
+USR0246,드론레이스관객,1988,male,서울,ko,2020-02-07,Standard,Action,game_console,weekend_night,single,active
+USR0247,새벽기도차단,1999,female,경기,ko,2020-10-16,Basic,Horror,mobile,late_night,shared,active
+USR0248,모래성우편,2002,male,전남,ko,2020-12-04,Basic,Animation,tablet,weekend_morning,family,active
+USR0249,냉장고의계절,1980,female,전북,ko,2019-08-30,Premium,Drama,smart_tv,weekday_evening,couple,active
+USR0250,자막없는계절,1994,male,서울,ko,2020-06-05,Standard,Romance,web,late_night,single,active
+USR0251,노래방할머니팬,1986,female,부산,ko,2019-12-13,Standard,Comedy,smart_tv,weekend_afternoon,family,active
+USR0252,알고리즘장례식,1992,male,세종,ko,2020-05-29,Premium,Science Fiction,tablet,weekday_night,single,active
+USR0253,목소리수집가,1975,female,인천,ko,2019-05-17,Premium,Fantasy,smart_tv,weekend_night,couple,active
+USR0254,새벽콜센터,1989,male,서울,ko,2020-03-20,Standard,Documentary,web,late_night,single,active
+USR0255,철의강건너편,1984,female,울산,ko,2019-11-01,Premium,Action,smart_tv,weekend_night,family,active
+USR0256,냉동창고문앞,1996,male,부산,ko,2020-09-18,Basic,Horror,headset,late_night,shared,active
+USR0257,로봇강아지꼬리,2000,female,경기,ko,2020-11-13,Basic,Animation,tablet,weekend_morning,single,active
+USR0258,달력뒤약속,1978,male,서울,ko,2019-07-26,Premium,Drama,smart_tv,weekday_evening,family,active
+USR0259,저녁온실,1993,female,세종,ko,2020-07-10,Standard,Romance,mobile,late_night,couple,active
+USR0260,사장님휴가중,1987,male,충남,ko,2020-01-03,Standard,Comedy,smart_tv,weekend_afternoon,single,active
+USR0261,전파없는아파트,1982,female,서울,ko,2019-09-13,Premium,Science Fiction,smart_tv,weekday_night,family,active
+USR0262,그림자이름표,1998,male,광주,ko,2020-10-09,Basic,Fantasy,tablet,late_night,shared,active
+USR0263,무대뒤열두명,1970,female,서울,ko,2019-03-22,Premium,Documentary,web,weekend_morning,couple,active
+USR0264,경성전파사손님,1985,male,인천,ko,2019-12-06,Premium,Action,smart_tv,weekend_night,single,active
+USR0265,종이문닫힘,1994,female,경북,ko,2020-08-21,Standard,Horror,headset,late_night,single,active
+USR0266,눈사람봄소풍,2003,male,강원,ko,2020-12-18,Basic,Animation,tablet,weekend_morning,family,active
+USR0267,우체통온도,1981,female,전북,ko,2019-08-09,Premium,Drama,smart_tv,weekday_evening,couple,active
+USR0268,파도몇시,1990,male,전남,ko,2020-04-24,Standard,Romance,web,weekend_night,single,active
+USR0269,공유냉장고단속,1995,female,서울,ko,2020-09-04,Basic,Comedy,mobile,commute,shared,active
+USR0270,날씨를사는중,1988,male,경기,ko,2020-02-28,Premium,Science Fiction,smart_tv,late_night,family,active
+USR0271,나무의주소,1974,female,경남,ko,2019-05-31,Premium,Fantasy,smart_tv,weekend_afternoon,couple,active
+USR0272,휠체어귀가길,1986,male,서울,ko,2020-01-17,Standard,Documentary,web,weekday_night,single,active
+USR0273,산불선구조대,1991,female,강원,ko,2020-05-08,Standard,Action,smart_tv,weekend_night,family,active
+USR0274,현관밖어제,1997,male,서울,ko,2020-10-30,Basic,Horror,mobile,late_night,shared,active
+USR0275,바다유리노래,2001,female,제주,ko,2020-11-27,Basic,Animation,tablet,weekend_morning,single,active
+USR0276,정류장의자,1973,male,경남,ko,2019-04-12,Premium,Drama,smart_tv,weekday_evening,couple,active
+USR0277,낮잠끝전화,1996,female,서울,ko,2020-08-14,Basic,Romance,mobile,late_night,shared,active
+USR0278,동네방송제보자,1984,male,경북,ko,2019-11-22,Standard,Comedy,smart_tv,weekend_afternoon,family,active
+USR0279,화성행대기중,1989,female,대전,ko,2020-03-06,Premium,Science Fiction,game_console,weekend_night,single,active
+USR0280,오늘마법품절,1993,male,서울,ko,2020-06-19,Standard,Fantasy,tablet,late_night,single,active
+USR0281,고향번역중,1977,female,경기,ko,2019-07-05,Premium,Documentary,web,weekday_evening,couple,active
+USR0282,무궁화호승객,1985,male,충북,ko,2019-12-20,Standard,Action,smart_tv,weekend_night,family,active
+USR0283,숨쉬는벽지,1998,female,인천,ko,2020-10-02,Basic,Horror,headset,late_night,shared,active
+USR0284,투명공룡친구,2004,male,서울,ko,2020-12-25,Basic,Animation,tablet,weekend_morning,family,active
+USR0285,보증금없는방,1982,female,서울,ko,2019-09-27,Premium,Drama,smart_tv,weekday_night,single,active
+USR0286,우리사이거리,1991,male,경기,ko,2020-04-10,Standard,Romance,web,late_night,couple,active
+USR0287,고시원셰프팬,1995,female,서울,ko,2020-08-28,Basic,Comedy,mobile,commute,shared,active
+USR0288,별빛우체국,1979,male,대전,ko,2019-08-16,Premium,Science Fiction,smart_tv,weekend_night,family,active
+USR0289,달을빌린사람,1997,female,서울,ko,2020-09-25,Basic,Fantasy,tablet,late_night,single,active
+USR0290,연어지도따라,1988,male,강원,ko,2020-02-21,Standard,Documentary,web,weekend_afternoon,couple,active
+USR0291,항공로승객,1983,female,인천,ko,2019-11-15,Premium,Action,smart_tv,weekend_night,family,active
+USR0292,체크아웃대기,1994,male,경기,ko,2020-07-31,Standard,Horror,headset,late_night,single,active
+USR0293,우체부구름이,2002,female,부산,ko,2020-12-11,Basic,Animation,tablet,weekend_morning,shared,active
+USR0294,겨울귤한상자,1971,male,제주,ko,2019-03-29,Premium,Drama,smart_tv,weekday_evening,couple,active
+USR0295,플레이리스트밤,1990,female,서울,ko,2020-03-13,Standard,Romance,mobile,late_night,single,active
+USR0296,로봇파업지지,1986,male,세종,ko,2020-01-24,Premium,Comedy,smart_tv,weekend_night,family,active
+USR0297,서울두번째달,1998,female,서울,ko,2020-10-16,Basic,Science Fiction,tablet,late_night,shared,active
+USR0298,구름수선예약,1992,male,강원,ko,2020-05-22,Standard,Fantasy,web,weekend_afternoon,single,active
+USR0299,내일도문엽니다,1976,female,경남,ko,2019-06-28,Premium,Documentary,smart_tv,weekday_evening,couple,active
+USR0300,마지막방패연,1984,male,경기,ko,2019-12-13,Premium,Action,smart_tv,weekend_night,family,active
